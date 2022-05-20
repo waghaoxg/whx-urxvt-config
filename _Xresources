@@ -1,4 +1,6 @@
+! Font
 URxvt.font: xft:Liberation Mono:pixelsize=20:antialias=true
+! Scrollbar
 URxvt.scrollBar: false
 ! Molokai theme
 ! See: https://gist.github.com/vreon/845878
@@ -22,8 +24,13 @@ urxvt*color13: #bb88dd
 urxvt*color14: #4eb4fa
 urxvt*color15: #d0d0d0
 ! ext
+URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard
 ! autocomplete
-URxvt.perl-ext-common:    autocomplete-ALL-the-things
 URxvt.keysym.M-C-slash:   perl:aAtt:word-complete
 URxvt.keysym.M-question:  perl:aAtt:fuzzy-complete
 URxvt.keysym.M-quotedbl:  perl:aAtt:undo
+!copy&paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
