@@ -24,7 +24,7 @@ urxvt*color13: #bb88dd
 urxvt*color14: #4eb4fa
 urxvt*color15: #d0d0d0
 ! ext
-URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard
+URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard,keyboard-select
 ! autocomplete
 URxvt.keysym.M-C-slash:   perl:aAtt:word-complete
 URxvt.keysym.M-question:  perl:aAtt:fuzzy-complete
@@ -34,3 +34,6 @@ URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+!keyboard-select
+URxvt.keysym.M-Shift-F: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
