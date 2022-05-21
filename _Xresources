@@ -4,7 +4,7 @@ URxvt.font: xft:Liberation Mono:pixelsize=20:antialias=true
 URxvt.scrollBar: false
 !Molokai theme
 !See: https://gist.github.com/vreon/845878
-urxvt*background: #1e1b0f
+urxvt*background: #101012
 urxvt*foreground: #d0d0d0
 urxvt*cursorColor: #d0d0d0
 urxvt*color0: #101010
