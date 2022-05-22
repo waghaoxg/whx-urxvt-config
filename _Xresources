@@ -4,8 +4,6 @@ URxvt.font: xft:Liberation Mono:pixelsize=20:antialias=true
 URxvt.scrollBar: false
 !Molokai theme
 !See: https://gist.github.com/vreon/845878
-urxvt*background: #101012
-urxvt*foreground: #d0d0d0
 urxvt*cursorColor: #d0d0d0
 urxvt*color0: #101010
 urxvt*color1: #960050
@@ -23,8 +21,19 @@ urxvt*color12: #5f5fee
 urxvt*color13: #bb88dd
 urxvt*color14: #4eb4fa
 urxvt*color15: #d0d0d0
+urxvt*foreground: #d0d0d0
+urxvt*background: #101419
+
+!!For real transparency (composite):
+!urxvt*depth: 32
+!urxvt*background: rgba:1000/1000/1200/dddd
+!!For fake transparency:
+!urxvt*transparent: true
+!urxvt*shading: 30
+
 !ext
-URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard,keyboard-select
+!URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard,keyboard-select
+URxvt.perl-ext-common: default,autocomplete-ALL-the-things,keyboard-select
 !autocomplete
 URxvt.keysym.M-C-slash:   perl:aAtt:word-complete
 URxvt.keysym.M-question:  perl:aAtt:fuzzy-complete
