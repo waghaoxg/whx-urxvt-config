@@ -2,6 +2,7 @@
 URxvt.font: xft:Liberation Mono:pixelsize=20:antialias=true
 !Scrollbar
 URxvt.scrollBar: false
+urxvt*geometry: 200x150
 !Molokai theme
 !See: https://gist.github.com/vreon/845878
 urxvt*cursorColor: #d0d0d0
