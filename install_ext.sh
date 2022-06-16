@@ -13,4 +13,7 @@ else
     #install keyboard
     git clone https://github.com/muennich/urxvt-perls.git 
     cp urxvt-perls/keyboard-select $EXT_DIR
+    #install tabbedalt
+    git clone https://github.com/gryf/tabbedalt.git
+    cp tabbedalt/tabbedalt $EXT_DIR
 fi
