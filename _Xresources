@@ -30,11 +30,13 @@ urxvt*background: #101419
 !urxvt*background: rgba:1000/1000/1200/dddd
 !!For fake transparency:
 !urxvt*transparent: true
+!URxvt*ineheritPixmap: true
 !urxvt*shading: 30
 
 !ext
 !URxvt.perl-ext-common: default,autocomplete-ALL-the-things,selection_to_clipboard,keyboard-select
 URxvt.perl-ext-common: default,autocomplete-ALL-the-things,keyboard-select
+URxvt.perl-ext: tabbedalt
 !autocomplete
 URxvt.keysym.M-C-slash:   perl:aAtt:word-complete
 URxvt.keysym.M-question:  perl:aAtt:fuzzy-complete
@@ -47,3 +49,36 @@ URxvt.iso14755_52: false
 !keyboard-select
 URxvt.keysym.M-Shift-F: perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard: true
+!tabbedalt
+URxvt.tabbedalt.tabbar-fg: 8
+URxvt.tabbedalt.tabbar-bg: 105
+URxvt.tabbedalt.tab-fg: 250
+URxvt.tabbedalt.tab-bg: 16
+URxvt.tabbedalt.active-fg: 8
+URxvt.tabbedalt.actives-fg: 8
+URxvt.tabbedalt.actived-fg: 8
+URxvt.tabbedalt.autohide: true
+URxvt.tabbedalt.new-button: false
+URxvt.tabbedalt.tabbar-timeouts: 0:.:0:::0:+
+URxvt.keysym.Control-1: tabbedalt:jump_to_tab:1
+URxvt.keysym.Control-2: tabbedalt:jump_to_tab:2
+URxvt.keysym.Control-3: tabbedalt:jump_to_tab:3
+URxvt.keysym.Control-4: tabbedalt:jump_to_tab:4
+URxvt.keysym.Control-5: tabbedalt:jump_to_tab:5
+URxvt.keysym.Control-6: tabbedalt:jump_to_tab:6
+URxvt.keysym.Control-7: tabbedalt:jump_to_tab:7
+URxvt.keysym.Control-8: tabbedalt:jump_to_tab:8
+URxvt.keysym.Control-9: tabbedalt:jump_to_tab:9
+URxvt.keysym.Control-0: tabbedalt:jump_to_tab:10
+URxvt.keysym.Control-F1: tabbedalt:jump_to_tab:11
+URxvt.keysym.Control-F2: tabbedalt:jump_to_tab:12
+URxvt.keysym.Control-F3: tabbedalt:jump_to_tab:13
+URxvt.keysym.Control-F4: tabbedalt:jump_to_tab:14
+URxvt.keysym.Control-F5: tabbedalt:jump_to_tab:15
+URxvt.keysym.Control-F6: tabbedalt:jump_to_tab:16
+URxvt.keysym.Control-F7: tabbedalt:jump_to_tab:17
+URxvt.keysym.Control-F8: tabbedalt:jump_to_tab:18
+URxvt.keysym.Control-F9: tabbedalt:jump_to_tab:19
+URxvt.keysym.Control-F10: tabbedalt:jump_to_tab:20
+URxvt.keysym.Control-F11: tabbedalt:jump_to_tab:21
+URxvt.keysym.Control-F12: tabbedalt:jump_to_tab:22
